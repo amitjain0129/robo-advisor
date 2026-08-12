@@ -8,6 +8,19 @@ The primary business problem is to translate an investor's risk profile into an 
 
 A secondary stock-screening capability provides market-level insights including top and bottom S&P 500 stocks by year-to-date return and sector-level return and volatility analysis.
 
+## Repository Structure
+
+The project repository is organized to provide the implementation artifacts used to build the AWS-based Robo Advisor and Stock Screening Analytics Platform.
+
+- **[Architecture and Data Model](./architecture/)** – Contains the AWS end-to-end solution architecture and analytical data model diagrams.
+
+- **[Data Ingestion Scripts](./ingestion/)** – Contains the Python scripts used to ingest financial market data from Stooq, yfinance, and Ken French data sources and prepare data for the S3 data lake.
+
+- **[SageMaker ML and Backtesting Notebook](./notebooks/)** – Contains the SageMaker notebook used for machine learning, portfolio optimization, risk-tier construction, and historical backtesting.
+
+- **[Athena SQL Queries](./sql/)** – Contains the Athena SQL used for data transformation, analytical queries, and datasets supporting the Amazon QuickSight dashboards.
+
+
 ## Architecture
 
 The solution uses the following AWS services:
