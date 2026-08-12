@@ -140,20 +140,6 @@ The market analytics portion of the project provides:
 * Sector-level annual volatility
 * Return-versus-risk comparisons
 
-## Repository Structure
-
-`notebooks/` contains the SageMaker machine-learning and portfolio optimization notebook.
-
-`ingestion/` contains Python scripts used to obtain and prepare financial data.
-
-`sql/` contains Athena DDL, transformation, and analytical SQL queries.
-
-`architecture/` contains the system architecture and data-model diagrams.
-
-`screenshots/` contains implementation evidence from Athena, SageMaker, and QuickSight.
-
-`docs/` contains supporting implementation documentation.
-
 ## Running the Project
 
 1. Configure an AWS environment with access to Amazon S3, AWS Glue, Athena, SageMaker, and QuickSight.
