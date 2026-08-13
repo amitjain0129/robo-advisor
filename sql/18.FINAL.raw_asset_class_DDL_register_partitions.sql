@@ -1,0 +1,1 @@
+MSCK REPAIR TABLE robo_advisor_tt.raw_asset_class;

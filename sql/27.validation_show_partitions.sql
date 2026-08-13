@@ -1,0 +1,1 @@
+SHOW PARTITIONS robo_advisor_tt.raw_stooq

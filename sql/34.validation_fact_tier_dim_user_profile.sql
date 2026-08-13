@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS n FROM dim_user_profile

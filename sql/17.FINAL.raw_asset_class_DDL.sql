@@ -1,0 +1,1 @@
+CREATE EXTERNAL TABLE robo_advisor_tt.raw_asset_class ( ticker string, `date` timestamp, open double, high double, low double, close double, adj_close double, volume bigint ) PARTITIONED BY (ingestion_date string) STORED AS PARQUET LOCATION 's3://mgmt59900-group1-robo-advisor-tt/raw/asset_class/'

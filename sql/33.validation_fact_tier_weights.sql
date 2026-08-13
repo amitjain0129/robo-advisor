@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS n FROM fact_tier_weights
