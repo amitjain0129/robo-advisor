@@ -10,15 +10,17 @@ A secondary stock-screening capability provides market-level insights including 
 
 ## Repository Structure
 
-The project repository is organized to provide the implementation artifacts used to build the AWS-based Robo Advisor and Stock Screening Analytics Platform.
+The project repository is organized to provide the implementation artifacts, analytical code, architecture documentation, and supporting technical documentation used to build the AWS-based Robo Advisor and Stock Screening Analytics Platform.
 
 - **[Architecture and Data Model](./architecture/)** – Contains the AWS end-to-end solution architecture and analytical data model diagrams.
 
-- **[Data Ingestion Scripts](./ingestion/)** – Contains the Python scripts used to ingest financial market data from Stooq, yfinance, and Ken French data sources and prepare data for the S3 data lake.
+- **[Data Ingestion Scripts](./ingestion/)** – Contains the Python scripts used to ingest financial market data from Stooq, yfinance, and Ken French data sources and prepare data for the Amazon S3 data lake.
 
-- **[SageMaker ML and Backtesting Notebook](./notebooks/)** – Contains the SageMaker notebook used for machine learning, portfolio optimization, risk-tier construction, and historical backtesting.
+- **[SageMaker ML and Backtesting Notebook](./notebooks/)** – Contains the final Amazon SageMaker notebook used for machine learning, portfolio optimization, risk-tier construction, and historical backtesting.
 
-- **[Athena SQL Queries](./sql/)** – Contains the Athena SQL used for data transformation, analytical queries, and datasets supporting the Amazon QuickSight dashboards.
+- **[Athena SQL Queries](./sql/)** – Contains the Amazon Athena SQL used for table creation, data transformation, validation, analytical queries, and datasets supporting the Amazon QuickSight dashboards. Reference queries used for selected screenshots in the final report are also retained.
+
+- **[Project Documentation](./docs/)** – Contains supporting technical documentation, including the implementation script table of contents, model card, and Amazon QuickSight implementation instructions.
 
 
 ## Architecture
@@ -99,6 +101,18 @@ The implementation incorporates:
 * Portfolio rebalancing
 * Transaction-cost assumptions
 * Historical backtesting
+
+## Project Documentation
+
+Supporting implementation and model-governance documentation is maintained in the **[docs](./docs/)** folder.
+
+The documentation includes:
+
+- **Implementation Script Table of Contents** – Maps the ingestion, Athena SQL, SageMaker, and QuickSight implementation artifacts and provides a reference for navigating the project files.
+- **Model Card** – Documents the machine-learning and portfolio optimization approach, intended use, methodology, evaluation results, assumptions, limitations, and governance considerations.
+- **QuickSight Implementation Instructions** – Documents the datasets, calculated fields, filters, controls, KPIs, and visualizations used to construct the Robo Advisor and Stock Screening dashboards.
+
+Screenshots demonstrating implementation and analytical results are included in the final project report rather than duplicated throughout the repository.
 
 ## Backtest Results
 
